@@ -1,0 +1,17 @@
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\bin\Debug\net8.0\Practica_1.exe
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\bin\Debug\net8.0\Practica_1.deps.json
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\bin\Debug\net8.0\Practica_1.runtimeconfig.json
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\bin\Debug\net8.0\Practica_1.dll
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\bin\Debug\net8.0\Practica_1.pdb
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\Practica_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\Practica_1.AssemblyInfoInputs.cache
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\Practica_1.AssemblyInfo.cs
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\Practica_1.csproj.CoreCompileInputs.cache
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\Practica_1.dll
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\refint\Practica_1.dll
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\Practica_1.pdb
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\Practica_1.genruntimeconfig.cache
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\ref\Practica_1.dll
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\Practica_1.csproj.AssemblyReference.cache
+C:\Семестр 7\Разработка безопасного программного обеспечения\Practica_1\Practica_1\obj\Debug\net8.0\Practica_1.csproj.Up2Date
