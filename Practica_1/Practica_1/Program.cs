@@ -14,28 +14,36 @@ namespace ConsoleApp
             DisplayDriveInfo();
 
             // 2. Работа с файлами
-            Console.Write("Введите строку для записи в файл: ");
-            string userInput = Console.ReadLine();
-            string filePath = "example.txt";
-            CreateAndManageFile(filePath, userInput);
+            Console.Write("Введите строку для записи в текстовый файл: ");
+            string textContent = Console.ReadLine();
+            CreateAndManageFile("example.txt", textContent);
 
             // 3. Работа с JSON
-            string jsonFilePath = "example.json";
-            ManageJsonFile(jsonFilePath);
+            Console.Write("Введите имя для JSON: ");
+            string jsonName = Console.ReadLine();
+            Console.Write("Введите возраст для JSON: ");
+            int jsonAge = int.Parse(Console.ReadLine());
+            Console.Write("Введите профессию для JSON: ");
+            string jsonOccupation = Console.ReadLine();
+            ManageJsonFile("example.json", jsonName, jsonAge, jsonOccupation);
 
             // 4. Работа с XML
-            string xmlFilePath = "example.xml";
-            ManageXmlFile(xmlFilePath);
+            Console.Write("Введите имя для XML: ");
+            string xmlName = Console.ReadLine();
+            Console.Write("Введите возраст для XML: ");
+            int xmlAge = int.Parse(Console.ReadLine());
+            Console.Write("Введите профессию для XML: ");
+            string xmlOccupation = Console.ReadLine();
+            ManageXmlFile("example.xml", xmlName, xmlAge, xmlOccupation);
 
             // 5. Создание ZIP-архива
-            string zipPath = "archive.zip";
-            CreateAndManageZip(zipPath, filePath);
+            CreateAndManageZip("archive.zip", "example.txt");
 
-            // Удаление исходного файла после создания архива
-            if (File.Exists(filePath))
+            // Удаление исходного текстового файла после архивации
+            if (File.Exists("example.txt"))
             {
-                File.Delete(filePath);
-                Console.WriteLine($"Файл '{filePath}' удален.");
+                File.Delete("example.txt");
+                Console.WriteLine("Текстовый файл удалён.");
             }
         }
 
@@ -58,7 +66,7 @@ namespace ConsoleApp
             }
         }
 
-        // 2. Работа с файлами
+        // 2. Работа с текстовым файлом
         static void CreateAndManageFile(string path, string content)
         {
             File.WriteAllText(path, content);
@@ -70,9 +78,9 @@ namespace ConsoleApp
         }
 
         // 3. Работа с JSON
-        static void ManageJsonFile(string path)
+        static void ManageJsonFile(string path, string name, int age, string occupation)
         {
-            var obj = new { Name = "Иван", Age = 30, Occupation = "Программист" };
+            var obj = new { Name = name, Age = age, Occupation = occupation };
             string json = JsonConvert.SerializeObject(obj, Formatting.Indented);
             File.WriteAllText(path, json);
             Console.WriteLine($"JSON-файл '{path}' создан и записан.");
@@ -82,16 +90,16 @@ namespace ConsoleApp
             Console.WriteLine(jsonContent);
 
             File.Delete(path);
-            Console.WriteLine($"JSON-файл '{path}' удален.");
+            Console.WriteLine($"JSON-файл '{path}' удалён.");
         }
 
         // 4. Работа с XML
-        static void ManageXmlFile(string path)
+        static void ManageXmlFile(string path, string name, int age, string occupation)
         {
             var xml = new XElement("Person",
-                new XElement("Name", "Иван"),
-                new XElement("Age", 30),
-                new XElement("Occupation", "Программист")
+                new XElement("Name", name),
+                new XElement("Age", age),
+                new XElement("Occupation", occupation)
             );
             xml.Save(path);
             Console.WriteLine($"XML-файл '{path}' создан и записан.");
@@ -101,7 +109,7 @@ namespace ConsoleApp
             Console.WriteLine(xmlContent);
 
             File.Delete(path);
-            Console.WriteLine($"XML-файл '{path}' удален.");
+            Console.WriteLine($"XML-файл '{path}' удалён.");
         }
 
         // 5. Работа с ZIP-архивом
@@ -113,7 +121,6 @@ namespace ConsoleApp
                 return;
             }
 
-            // Создаем архив
             using (FileStream zipStream = new FileStream(zipPath, FileMode.Create))
             using (ZipArchive archive = new ZipArchive(zipStream, ZipArchiveMode.Create))
             {
@@ -121,7 +128,6 @@ namespace ConsoleApp
                 Console.WriteLine($"Файл '{filePath}' добавлен в архив '{zipPath}'.");
             }
 
-            // Чтение содержимого архива
             Console.WriteLine("Содержимое архива:");
             using (ZipArchive archive = ZipFile.OpenRead(zipPath))
             {
@@ -131,9 +137,8 @@ namespace ConsoleApp
                 }
             }
 
-            // Удаление архива
             File.Delete(zipPath);
-            Console.WriteLine($"Архив '{zipPath}' удален.");
+            Console.WriteLine($"Архив '{zipPath}' удалён.");
         }
     }
 }

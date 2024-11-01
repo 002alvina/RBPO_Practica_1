@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica_1\\Practica_1\\Practica_1.csproj": {}
+    "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica 1\\Practica_1\\Practica_1\\Practica_1.csproj": {}
   },
   "projects": {
-    "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica_1\\Practica_1\\Practica_1.csproj": {
+    "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica 1\\Practica_1\\Practica_1\\Practica_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica_1\\Practica_1\\Practica_1.csproj",
+        "projectUniqueName": "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica 1\\Practica_1\\Practica_1\\Practica_1.csproj",
         "projectName": "Practica_1",
-        "projectPath": "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica_1\\Practica_1\\Practica_1.csproj",
+        "projectPath": "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica 1\\Practica_1\\Practica_1\\Practica_1.csproj",
         "packagesPath": "C:\\Users\\alvin\\.nuget\\packages\\",
-        "outputPath": "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica_1\\Practica_1\\obj\\",
+        "outputPath": "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica 1\\Practica_1\\Practica_1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MJUL9K4oZR8=",
+  "dgSpecHash": "TnpXs4W3PY8=",
   "success": true,
-  "projectFilePath": "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica_1\\Practica_1\\Practica_1.csproj",
+  "projectFilePath": "C:\\Семестр 7\\Разработка безопасного программного обеспечения\\Practica 1\\Practica_1\\Practica_1\\Practica_1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alvin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
